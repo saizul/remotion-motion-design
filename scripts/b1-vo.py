@@ -1,0 +1,98 @@
+"""Generates the B1 Test Birmingham guide voice-over (macOS `say`, Evan (Enhanced)).
+
+Each line is timed to the on-screen animation. To use a studio voice instead
+(e.g. ElevenLabs), export files with the same names into public/b1/vo/ and
+re-run this script with --measure-only to refresh the timings.
+"""
+import json, subprocess, sys, pathlib
+
+FPS = 30
+SCENE_START = {"hook": 0, "course": 150, "features": 300, "transform": 450, "journey": 600, "cta": 750}
+SCENE_LEN = {"hook": 150, "course": 150, "features": 150, "transform": 150, "journey": 150, "cta": 190}
+
+# id, scene, earliest local frame (None = right after the previous line), text (as spoken)
+# Lines never overlap: each starts at max(earliest frame, previous end + GAP).
+LINES = [
+    ("vo-01", "hook", 24, "Build confidence. Speak clearly."),
+    ("vo-02", "hook", None, "With B one Test Birmingham."),
+    ("vo-03", "course", 12, "Our listening and speaking course trains you for real life conversations."),
+    ("vo-04", "features", 24, "Ten days."),
+    ("vo-05", "features", 48, "Flexible weekday classes."),
+    ("vo-06", "features", 88, "All study materials included."),
+    ("vo-07", "transform", 6, "Go from hesitation"),
+    ("vo-08", "transform", 64, "to real confidence."),
+    ("vo-09", "journey", 12, "Learn."),
+    ("vo-10", "journey", 46, "Practice."),
+    ("vo-11", "journey", 80, "Succeed."),
+    ("vo-12", "cta", 30, "Prepare with confidence."),
+    ("vo-13", "cta", None, "Join B one Test Birmingham today."),
+]
+# None would use the macOS System Voice (needed for Siri voices, which `say -v` cannot select).
+VOICE, RATE = "Evan (Enhanced)", 172
+RATE_OVERRIDE = {"vo-04": 195, "vo-05": 195, "vo-06": 195}
+OUT = pathlib.Path("public/b1/vo")
+# Clarity chain: cut rumble/mud, lift presence + air, tame sibilance,
+# compress, then normalise loud (-13 LUFS) with a safety limiter.
+VOICE_CHAIN = ",".join([
+    "highpass=f=90",
+    "equalizer=f=250:t=q:w=1:g=-3",
+    "equalizer=f=3500:t=q:w=1.2:g=4",
+    "highshelf=f=9000:g=3",
+    "deesser=i=0.4",
+    "acompressor=threshold=-20dB:ratio=3:attack=5:release=80:makeup=2",
+    "loudnorm=I=-13:TP=-1.0:LRA=7",
+    "alimiter=limit=0.9",
+])
+LEAD, TAIL = 2, 7  # frames of padding kept around each line (80 ms lead, ~230 ms tail)
+GAP = 4  # frames between chained lines
+
+def duration(path):
+    return float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(path)]).strip())
+
+def synth(name, text, rate):
+    aiff = OUT / f"{name}.aiff"
+    voice_args = ["-v", VOICE] if VOICE else []
+    subprocess.run(["say", *voice_args, "-r", str(rate), "-o", str(aiff), text], check=True)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(aiff), "-af",
+                    # Gentle trim: keep 80 ms of room at both ends so soft onsets/endings (f, s, t) are never clipped.
+                    "silenceremove=start_periods=1:start_threshold=-65dB:start_silence=0.08,areverse,"
+                    "silenceremove=start_periods=1:start_threshold=-65dB:start_silence=0.08,areverse,apad=pad_dur=0.15,"
+                    + VOICE_CHAIN + ",adelay=80:all=1",
+                    "-ar", "48000", "-ac", "2", str(OUT / f"{name}.wav")], check=True)
+    aiff.unlink()
+    level_match(OUT / f"{name}.wav")
+
+def lufs(path):
+    # Pad with silence: EBU R128 needs >= 400 ms, and gating ignores the padding.
+    out = subprocess.run(["ffmpeg", "-i", str(path), "-af", "apad=pad_dur=1,ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
+    return float(out.rsplit("I:", 1)[1].split("LUFS")[0])
+
+# Second pass: every line lands on the same loudness so no line sounds quieter.
+def level_match(path, target=-13.0):
+    gain = target - lufs(path)
+    tmp = path.with_suffix(".tmp.wav")
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(path), "-af", f"volume={gain:.2f}dB,alimiter=limit=0.89",
+                    "-ar", "48000", "-ac", "2", str(tmp)], check=True)
+    tmp.replace(path)
+
+OUT.mkdir(parents=True, exist_ok=True)
+measure_only = "--measure-only" in sys.argv
+events, prev_end = [], {}
+for name, scene, at, text in LINES:
+    if not measure_only:
+        synth(name, text, RATE_OVERRIDE.get(name, RATE))
+    dur = round(duration(OUT / f"{name}.wav") * FPS)
+    # Files carry silent padding (LEAD at the start, TAIL at the end); chain lines on the speech only.
+    speech = dur - LEAD - TAIL
+    after_prev = prev_end[scene] + GAP if scene in prev_end else 0
+    start = max(at if at is not None else 0, after_prev)
+    if start + speech > SCENE_LEN[scene] + 10:
+        print(f"WARNING {name} overruns scene {scene}: {start}+{speech}")
+    prev_end[scene] = start + speech
+    events.append({"file": f"b1/vo/{name}.wav", "from": SCENE_START[scene] + start - LEAD, "frames": dur, "text": text})
+    dur = speech
+    print(f"{name} {scene:9} local {start:3}-{start + dur:3}  {text}")
+
+ts = "// Generated by scripts/b1-vo.py — voice-over placement in composition frames.\n"
+ts += "export const VO_EVENTS = " + json.dumps(events, indent=2) + " as const;\n"
+pathlib.Path("src/videos/B1TestBirmingham/voiceover.ts").write_text(ts)

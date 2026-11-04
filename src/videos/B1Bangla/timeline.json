@@ -1,0 +1,490 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "overlap": 10,
+ "voOffset": 53,
+ "scenes": [
+  [
+   "hero",
+   159
+  ],
+  [
+   "journey",
+   258
+  ],
+  [
+   "classroom",
+   180
+  ],
+  [
+   "transform",
+   255
+  ],
+  [
+   "enroll",
+   246
+  ],
+  [
+   "cta",
+   237
+  ]
+ ],
+ "typing": {
+  "heroTitle": {
+   "scene": "hero",
+   "start": 10,
+   "text": "B1 Test",
+   "fpc": 2.2,
+   "vol": 1.0
+  },
+  "heroTag": {
+   "scene": "hero",
+   "start": 58,
+   "text": "ভিসার জন্য প্রয়োজনীয় প্রস্তুতি",
+   "fpc": 2.2,
+   "vol": 1.0
+  },
+  "feat0": {
+   "scene": "journey",
+   "start": 46,
+   "text": "মাত্র ১০ দিনের প্রস্তুতি",
+   "fpc": 1.6,
+   "vol": 1.0
+  },
+  "feat1": {
+   "scene": "journey",
+   "start": 96,
+   "text": "স্পিকিং ও লিসেনিং অনুশীলন",
+   "fpc": 1.6,
+   "vol": 1.0
+  },
+  "feat2": {
+   "scene": "journey",
+   "start": 146,
+   "text": "সপ্তাহের দিন ক্লাস",
+   "fpc": 1.6,
+   "vol": 1.0
+  },
+  "feat3": {
+   "scene": "journey",
+   "start": 196,
+   "text": "ফ্লেক্সিবল সময়",
+   "fpc": 1.6,
+   "vol": 1.0
+  },
+  "class0": {
+   "scene": "classroom",
+   "start": 34,
+   "text": "অভিজ্ঞ শিক্ষকের সহায়তা",
+   "fpc": 1.6,
+   "vol": 1.0
+  },
+  "class1": {
+   "scene": "classroom",
+   "start": 78,
+   "text": "মক টেস্ট অনুশীলন",
+   "fpc": 1.6,
+   "vol": 1.0
+  },
+  "class2": {
+   "scene": "classroom",
+   "start": 122,
+   "text": "ব্যক্তিগত গাইডলাইন",
+   "fpc": 1.6,
+   "vol": 1.0
+  },
+  "before": {
+   "scene": "transform",
+   "start": 14,
+   "text": "আগে",
+   "fpc": 2.5,
+   "vol": 0.8
+  },
+  "after": {
+   "scene": "transform",
+   "start": 70,
+   "text": "পরে",
+   "fpc": 2.5,
+   "vol": 0.8
+  },
+  "confidence": {
+   "scene": "transform",
+   "start": 86,
+   "text": "আত্মবিশ্বাসের সাথে\nপরীক্ষায় অংশ নিন",
+   "fpc": 1.8,
+   "vol": 1.0
+  },
+  "seats": {
+   "scene": "enroll",
+   "start": 52,
+   "text": "সীমিত আসন",
+   "fpc": 2,
+   "vol": 1.0
+  },
+  "register": {
+   "scene": "enroll",
+   "start": 100,
+   "text": "আজই নিবন্ধন করুন",
+   "fpc": 1.6,
+   "vol": 1.0
+  },
+  "future": {
+   "scene": "enroll",
+   "start": 148,
+   "text": "আপনার ভবিষ্যতের জন্য\nপ্রস্তুতি শুরু করুন",
+   "fpc": 1.4,
+   "vol": 1.0
+  },
+  "ctaText": {
+   "scene": "cta",
+   "start": 26,
+   "text": "আজই যোগাযোগ করুন",
+   "fpc": 1.6,
+   "vol": 1.0
+  },
+  "phone": {
+   "scene": "cta",
+   "start": 72,
+   "text": "+44 7395 425740",
+   "fpc": 0.8,
+   "vol": 0.7
+  },
+  "email": {
+   "scene": "cta",
+   "start": 90,
+   "text": "info@b1testbirmingham.co.uk",
+   "fpc": 0.6,
+   "vol": 0.7
+  },
+  "web": {
+   "scene": "cta",
+   "start": 112,
+   "text": "b1testbirmingham.co.uk",
+   "fpc": 0.6,
+   "vol": 0.7
+  }
+ },
+ "sfx": [
+  [
+   "hero",
+   0,
+   "whoosh-big",
+   0.45
+  ],
+  [
+   "hero",
+   6,
+   "shimmer",
+   0.55
+  ],
+  [
+   "hero",
+   10,
+   "holo",
+   0.35
+  ],
+  [
+   "hero",
+   54,
+   "whoosh",
+   0.3
+  ],
+  [
+   "hero",
+   150,
+   "whoosh",
+   0.45
+  ],
+  [
+   "journey",
+   0,
+   "impact",
+   0.4
+  ],
+  [
+   "journey",
+   4,
+   "swipe",
+   0.4
+  ],
+  [
+   "journey",
+   18,
+   "pop",
+   0.35
+  ],
+  [
+   "journey",
+   40,
+   "pop",
+   0.45
+  ],
+  [
+   "journey",
+   44,
+   "blip",
+   0.35
+  ],
+  [
+   "journey",
+   90,
+   "pop",
+   0.45
+  ],
+  [
+   "journey",
+   94,
+   "blip",
+   0.35
+  ],
+  [
+   "journey",
+   140,
+   "pop",
+   0.45
+  ],
+  [
+   "journey",
+   144,
+   "blip",
+   0.35
+  ],
+  [
+   "journey",
+   190,
+   "pop",
+   0.45
+  ],
+  [
+   "journey",
+   194,
+   "blip",
+   0.35
+  ],
+  [
+   "journey",
+   248,
+   "whoosh",
+   0.45
+  ],
+  [
+   "classroom",
+   0,
+   "impact",
+   0.4
+  ],
+  [
+   "classroom",
+   4,
+   "whoosh",
+   0.35
+  ],
+  [
+   "classroom",
+   14,
+   "holo",
+   0.35
+  ],
+  [
+   "classroom",
+   28,
+   "pop",
+   0.45
+  ],
+  [
+   "classroom",
+   32,
+   "blip",
+   0.35
+  ],
+  [
+   "classroom",
+   72,
+   "pop",
+   0.45
+  ],
+  [
+   "classroom",
+   76,
+   "blip",
+   0.35
+  ],
+  [
+   "classroom",
+   116,
+   "pop",
+   0.45
+  ],
+  [
+   "classroom",
+   120,
+   "blip",
+   0.35
+  ],
+  [
+   "classroom",
+   170,
+   "whoosh",
+   0.45
+  ],
+  [
+   "transform",
+   0,
+   "impact",
+   0.4
+  ],
+  [
+   "transform",
+   40,
+   "whoosh-big",
+   0.5
+  ],
+  [
+   "transform",
+   60,
+   "riser",
+   0.4
+  ],
+  [
+   "transform",
+   126,
+   "impact",
+   0.45
+  ],
+  [
+   "transform",
+   128,
+   "ding",
+   0.35
+  ],
+  [
+   "transform",
+   245,
+   "whoosh",
+   0.45
+  ],
+  [
+   "enroll",
+   0,
+   "impact",
+   0.4
+  ],
+  [
+   "enroll",
+   10,
+   "swipe",
+   0.45
+  ],
+  [
+   "enroll",
+   30,
+   "metal",
+   0.6
+  ],
+  [
+   "enroll",
+   34,
+   "shimmer",
+   0.35
+  ],
+  [
+   "enroll",
+   94,
+   "click",
+   0.55
+  ],
+  [
+   "enroll",
+   98,
+   "pop",
+   0.4
+  ],
+  [
+   "enroll",
+   142,
+   "whoosh",
+   0.3
+  ],
+  [
+   "enroll",
+   200,
+   "ding",
+   0.5
+  ],
+  [
+   "enroll",
+   236,
+   "whoosh-big",
+   0.45
+  ],
+  [
+   "cta",
+   0,
+   "impact",
+   0.45
+  ],
+  [
+   "cta",
+   4,
+   "shimmer",
+   0.5
+  ],
+  [
+   "cta",
+   22,
+   "click",
+   0.5
+  ],
+  [
+   "cta",
+   24,
+   "pop",
+   0.4
+  ],
+  [
+   "cta",
+   66,
+   "pop",
+   0.35
+  ],
+  [
+   "cta",
+   84,
+   "pop",
+   0.35
+  ],
+  [
+   "cta",
+   106,
+   "pop",
+   0.35
+  ],
+  [
+   "cta",
+   150,
+   "shimmer",
+   0.55
+  ],
+  [
+   "cta",
+   154,
+   "metal",
+   0.35
+  ]
+ ],
+ "voTrimStart": 0.85,
+ "extraVo": [
+  {
+   "id": "nameIntro",
+   "src": "vo-tagline.mp3",
+   "from": 9,
+   "trimEnd": 1.1
+  },
+  {
+   "id": "taglineOutro",
+   "src": "vo-tagline.mp3",
+   "from": 1237
+  }
+ ]
+}

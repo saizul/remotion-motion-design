@@ -1,0 +1,1314 @@
+{
+ "fps": 24,
+ "width": 1920,
+ "height": 1080,
+ "overlap": 12,
+ "scenes": [
+  [
+   "arrival",
+   192
+  ],
+  [
+   "who",
+   240
+  ],
+  [
+   "ecosystem",
+   240
+  ],
+  [
+   "web",
+   288
+  ],
+  [
+   "seo",
+   288
+  ],
+  [
+   "marketing",
+   240
+  ],
+  [
+   "ai",
+   432
+  ],
+  [
+   "systems",
+   240
+  ],
+  [
+   "global",
+   240
+  ],
+  [
+   "showcase",
+   240
+  ],
+  [
+   "legacy",
+   240
+  ]
+ ],
+ "typing": {
+  "arrivalName": {
+   "scene": "arrival",
+   "start": 118,
+   "text": "SAIZUL AMIN",
+   "fpc": 2,
+   "vol": 1.0
+  },
+  "whoCard0": {
+   "scene": "who",
+   "start": 40,
+   "text": "Founder",
+   "fpc": 1,
+   "vol": 1.0
+  },
+  "whoCard1": {
+   "scene": "who",
+   "start": 60,
+   "text": "Digital Systems Strategist",
+   "fpc": 1,
+   "vol": 1.0
+  },
+  "whoCard2": {
+   "scene": "who",
+   "start": 80,
+   "text": "AI Automation Specialist",
+   "fpc": 1,
+   "vol": 1.0
+  },
+  "whoCard3": {
+   "scene": "who",
+   "start": 100,
+   "text": "Web Developer",
+   "fpc": 1,
+   "vol": 1.0
+  },
+  "whoCard4": {
+   "scene": "who",
+   "start": 120,
+   "text": "SEO Strategist",
+   "fpc": 1,
+   "vol": 1.0
+  },
+  "whoCard5": {
+   "scene": "who",
+   "start": 140,
+   "text": "Digital Growth Partner",
+   "fpc": 1,
+   "vol": 1.0
+  },
+  "eco0": {
+   "scene": "ecosystem",
+   "start": 60,
+   "text": "Building Systems",
+   "fpc": 1.5,
+   "vol": 1.0
+  },
+  "eco1": {
+   "scene": "ecosystem",
+   "start": 110,
+   "text": "Driving Growth",
+   "fpc": 1.5,
+   "vol": 1.0
+  },
+  "eco2": {
+   "scene": "ecosystem",
+   "start": 160,
+   "text": "Creating Impact",
+   "fpc": 1.5,
+   "vol": 1.0
+  },
+  "web0": {
+   "scene": "web",
+   "start": 30,
+   "text": "Web Development",
+   "fpc": 1.2,
+   "vol": 1.0
+  },
+  "web1": {
+   "scene": "web",
+   "start": 70,
+   "text": "CMS Development",
+   "fpc": 1.2,
+   "vol": 1.0
+  },
+  "web2": {
+   "scene": "web",
+   "start": 110,
+   "text": "Custom Page Builds",
+   "fpc": 1.2,
+   "vol": 1.0
+  },
+  "web3": {
+   "scene": "web",
+   "start": 150,
+   "text": "UI/UX Design",
+   "fpc": 1.2,
+   "vol": 1.0
+  },
+  "web4": {
+   "scene": "web",
+   "start": 190,
+   "text": "Performance Optimization",
+   "fpc": 1.2,
+   "vol": 1.0
+  },
+  "seoQuery": {
+   "scene": "seo",
+   "start": 12,
+   "text": "grow my business online",
+   "fpc": 1.1,
+   "vol": 0.8
+  },
+  "seo0": {
+   "scene": "seo",
+   "start": 50,
+   "text": "SEO Strategy",
+   "fpc": 1.2,
+   "vol": 1.0
+  },
+  "seo1": {
+   "scene": "seo",
+   "start": 90,
+   "text": "Technical SEO",
+   "fpc": 1.2,
+   "vol": 1.0
+  },
+  "seo2": {
+   "scene": "seo",
+   "start": 130,
+   "text": "Content Optimization",
+   "fpc": 1.2,
+   "vol": 1.0
+  },
+  "seo3": {
+   "scene": "seo",
+   "start": 170,
+   "text": "Organic Growth",
+   "fpc": 1.2,
+   "vol": 1.0
+  },
+  "seo4": {
+   "scene": "seo",
+   "start": 210,
+   "text": "Search Visibility",
+   "fpc": 1.2,
+   "vol": 1.0
+  },
+  "mkt0": {
+   "scene": "marketing",
+   "start": 30,
+   "text": "Digital Marketing",
+   "fpc": 1.2,
+   "vol": 1.0
+  },
+  "mkt1": {
+   "scene": "marketing",
+   "start": 75,
+   "text": "Lead Generation",
+   "fpc": 1.2,
+   "vol": 1.0
+  },
+  "mkt2": {
+   "scene": "marketing",
+   "start": 120,
+   "text": "Campaign Strategy",
+   "fpc": 1.2,
+   "vol": 1.0
+  },
+  "mkt3": {
+   "scene": "marketing",
+   "start": 165,
+   "text": "Conversion Optimization",
+   "fpc": 1.2,
+   "vol": 1.0
+  },
+  "ai0": {
+   "scene": "ai",
+   "start": 60,
+   "text": "AI Automation",
+   "fpc": 1.5,
+   "vol": 1.0
+  },
+  "ai1": {
+   "scene": "ai",
+   "start": 120,
+   "text": "AI Agents",
+   "fpc": 1.5,
+   "vol": 1.0
+  },
+  "ai2": {
+   "scene": "ai",
+   "start": 180,
+   "text": "Workflow Automation",
+   "fpc": 1.5,
+   "vol": 1.0
+  },
+  "ai3": {
+   "scene": "ai",
+   "start": 250,
+   "text": "Business Intelligence",
+   "fpc": 1.5,
+   "vol": 1.0
+  },
+  "ai4": {
+   "scene": "ai",
+   "start": 320,
+   "text": "Process Optimization",
+   "fpc": 1.5,
+   "vol": 1.0
+  },
+  "aiNode0": {
+   "scene": "ai",
+   "start": 104,
+   "text": "AI Agents",
+   "fpc": 0.7,
+   "vol": 0.55
+  },
+  "aiNode1": {
+   "scene": "ai",
+   "start": 122,
+   "text": "Automated Workflows",
+   "fpc": 0.7,
+   "vol": 0.55
+  },
+  "aiNode2": {
+   "scene": "ai",
+   "start": 140,
+   "text": "Smart Assistants",
+   "fpc": 0.7,
+   "vol": 0.55
+  },
+  "aiNode3": {
+   "scene": "ai",
+   "start": 158,
+   "text": "Business Automation",
+   "fpc": 0.7,
+   "vol": 0.55
+  },
+  "aiNode4": {
+   "scene": "ai",
+   "start": 176,
+   "text": "Data Intelligence",
+   "fpc": 0.7,
+   "vol": 0.55
+  },
+  "aiNode5": {
+   "scene": "ai",
+   "start": 194,
+   "text": "CRM Automation",
+   "fpc": 0.7,
+   "vol": 0.55
+  },
+  "aiNode6": {
+   "scene": "ai",
+   "start": 212,
+   "text": "Lead Qualification",
+   "fpc": 0.7,
+   "vol": 0.55
+  },
+  "aiNode7": {
+   "scene": "ai",
+   "start": 230,
+   "text": "Customer Support",
+   "fpc": 0.7,
+   "vol": 0.55
+  },
+  "aiNode8": {
+   "scene": "ai",
+   "start": 248,
+   "text": "Content Automation",
+   "fpc": 0.7,
+   "vol": 0.55
+  },
+  "aiNode9": {
+   "scene": "ai",
+   "start": 266,
+   "text": "Document Processing",
+   "fpc": 0.7,
+   "vol": 0.55
+  },
+  "aiNode10": {
+   "scene": "ai",
+   "start": 284,
+   "text": "Workflow Engines",
+   "fpc": 0.7,
+   "vol": 0.55
+  },
+  "sys0": {
+   "scene": "systems",
+   "start": 24,
+   "text": "Websites",
+   "fpc": 0.8,
+   "vol": 0.6
+  },
+  "sys1": {
+   "scene": "systems",
+   "start": 34,
+   "text": "Marketing",
+   "fpc": 0.8,
+   "vol": 0.6
+  },
+  "sys2": {
+   "scene": "systems",
+   "start": 44,
+   "text": "SEO",
+   "fpc": 0.8,
+   "vol": 0.6
+  },
+  "sys3": {
+   "scene": "systems",
+   "start": 54,
+   "text": "Automation",
+   "fpc": 0.8,
+   "vol": 0.6
+  },
+  "sys4": {
+   "scene": "systems",
+   "start": 64,
+   "text": "CRM",
+   "fpc": 0.8,
+   "vol": 0.6
+  },
+  "sys5": {
+   "scene": "systems",
+   "start": 74,
+   "text": "Analytics",
+   "fpc": 0.8,
+   "vol": 0.6
+  },
+  "sys6": {
+   "scene": "systems",
+   "start": 84,
+   "text": "Operations",
+   "fpc": 0.8,
+   "vol": 0.6
+  },
+  "glb0": {
+   "scene": "global",
+   "start": 60,
+   "text": "Global Collaboration",
+   "fpc": 1.2,
+   "vol": 1.0
+  },
+  "glb1": {
+   "scene": "global",
+   "start": 120,
+   "text": "Scalable Solutions",
+   "fpc": 1.2,
+   "vol": 1.0
+  },
+  "glb2": {
+   "scene": "global",
+   "start": 180,
+   "text": "Digital Transformation",
+   "fpc": 1.2,
+   "vol": 1.0
+  },
+  "show0": {
+   "scene": "showcase",
+   "start": 50,
+   "text": "Build Smarter",
+   "fpc": 1.5,
+   "vol": 1.0
+  },
+  "show1": {
+   "scene": "showcase",
+   "start": 100,
+   "text": "Scale Faster",
+   "fpc": 1.5,
+   "vol": 1.0
+  },
+  "show2": {
+   "scene": "showcase",
+   "start": 150,
+   "text": "Automate Growth",
+   "fpc": 1.5,
+   "vol": 1.0
+  },
+  "legacyName": {
+   "scene": "legacy",
+   "start": 50,
+   "text": "SAIZUL AMIN",
+   "fpc": 1.5,
+   "vol": 1.0
+  },
+  "legacyTitle0": {
+   "scene": "legacy",
+   "start": 72,
+   "text": "Founder",
+   "fpc": 0.6,
+   "vol": 0.7
+  },
+  "legacyTitle1": {
+   "scene": "legacy",
+   "start": 80,
+   "text": "Digital Systems Strategist",
+   "fpc": 0.6,
+   "vol": 0.7
+  },
+  "legacyTitle2": {
+   "scene": "legacy",
+   "start": 99,
+   "text": "AI Automation Specialist",
+   "fpc": 0.6,
+   "vol": 0.7
+  },
+  "legacyTitle3": {
+   "scene": "legacy",
+   "start": 117,
+   "text": "Web Developer",
+   "fpc": 0.6,
+   "vol": 0.7
+  },
+  "legacyTitle4": {
+   "scene": "legacy",
+   "start": 128,
+   "text": "SEO Strategist",
+   "fpc": 0.6,
+   "vol": 0.7
+  },
+  "legacyTitle5": {
+   "scene": "legacy",
+   "start": 140,
+   "text": "Digital Growth Partner",
+   "fpc": 0.6,
+   "vol": 0.7
+  },
+  "legacyUrl": {
+   "scene": "legacy",
+   "start": 176,
+   "text": "www.saizul.com",
+   "fpc": 1.3,
+   "vol": 1.0
+  }
+ },
+ "sfx": [
+  [
+   "arrival",
+   0,
+   "whoosh-big",
+   0.5
+  ],
+  [
+   "arrival",
+   8,
+   "particles",
+   0.6
+  ],
+  [
+   "arrival",
+   60,
+   "particles",
+   0.4
+  ],
+  [
+   "arrival",
+   96,
+   "metal",
+   0.7
+  ],
+  [
+   "arrival",
+   104,
+   "impact",
+   0.6
+  ],
+  [
+   "arrival",
+   110,
+   "holo",
+   0.5
+  ],
+  [
+   "arrival",
+   130,
+   "pulse",
+   0.5
+  ],
+  [
+   "arrival",
+   170,
+   "pulse",
+   0.4
+  ],
+  [
+   "arrival",
+   180,
+   "whoosh",
+   0.5
+  ],
+  [
+   "who",
+   0,
+   "holo",
+   0.6
+  ],
+  [
+   "who",
+   20,
+   "whoosh",
+   0.3
+  ],
+  [
+   "who",
+   34,
+   "holo",
+   0.35
+  ],
+  [
+   "who",
+   54,
+   "holo",
+   0.35
+  ],
+  [
+   "who",
+   74,
+   "holo",
+   0.35
+  ],
+  [
+   "who",
+   94,
+   "holo",
+   0.35
+  ],
+  [
+   "who",
+   114,
+   "holo",
+   0.35
+  ],
+  [
+   "who",
+   134,
+   "holo",
+   0.35
+  ],
+  [
+   "who",
+   228,
+   "whoosh",
+   0.4
+  ],
+  [
+   "ecosystem",
+   0,
+   "whoosh-big",
+   0.5
+  ],
+  [
+   "ecosystem",
+   10,
+   "rise",
+   0.4
+  ],
+  [
+   "ecosystem",
+   30,
+   "data",
+   0.3
+  ],
+  [
+   "ecosystem",
+   90,
+   "connect",
+   0.35
+  ],
+  [
+   "ecosystem",
+   100,
+   "connect",
+   0.35
+  ],
+  [
+   "ecosystem",
+   110,
+   "connect",
+   0.35
+  ],
+  [
+   "ecosystem",
+   120,
+   "connect",
+   0.35
+  ],
+  [
+   "ecosystem",
+   130,
+   "holo",
+   0.5
+  ],
+  [
+   "ecosystem",
+   134,
+   "pulse",
+   0.4
+  ],
+  [
+   "ecosystem",
+   228,
+   "whoosh",
+   0.4
+  ],
+  [
+   "web",
+   0,
+   "swipe",
+   0.45
+  ],
+  [
+   "web",
+   12,
+   "swipe",
+   0.45
+  ],
+  [
+   "web",
+   24,
+   "swipe",
+   0.45
+  ],
+  [
+   "web",
+   80,
+   "click",
+   0.5
+  ],
+  [
+   "web",
+   90,
+   "data",
+   0.3
+  ],
+  [
+   "web",
+   120,
+   "holo",
+   0.4
+  ],
+  [
+   "web",
+   160,
+   "click",
+   0.5
+  ],
+  [
+   "web",
+   180,
+   "rise",
+   0.4
+  ],
+  [
+   "web",
+   230,
+   "click",
+   0.5
+  ],
+  [
+   "web",
+   244,
+   "ping",
+   0.4
+  ],
+  [
+   "web",
+   276,
+   "whoosh",
+   0.4
+  ],
+  [
+   "seo",
+   4,
+   "swipe",
+   0.4
+  ],
+  [
+   "seo",
+   40,
+   "click",
+   0.5
+  ],
+  [
+   "seo",
+   46,
+   "data",
+   0.4
+  ],
+  [
+   "seo",
+   60,
+   "swipe",
+   0.25
+  ],
+  [
+   "seo",
+   90,
+   "rise",
+   0.45
+  ],
+  [
+   "seo",
+   150,
+   "ping",
+   0.5
+  ],
+  [
+   "seo",
+   170,
+   "rise",
+   0.4
+  ],
+  [
+   "seo",
+   276,
+   "whoosh",
+   0.4
+  ],
+  [
+   "marketing",
+   0,
+   "swipe",
+   0.4
+  ],
+  [
+   "marketing",
+   10,
+   "swipe",
+   0.4
+  ],
+  [
+   "marketing",
+   20,
+   "swipe",
+   0.4
+  ],
+  [
+   "marketing",
+   40,
+   "click",
+   0.6
+  ],
+  [
+   "marketing",
+   42,
+   "pulse",
+   0.5
+  ],
+  [
+   "marketing",
+   50,
+   "data",
+   0.3
+  ],
+  [
+   "marketing",
+   80,
+   "ping",
+   0.45
+  ],
+  [
+   "marketing",
+   115,
+   "ping",
+   0.45
+  ],
+  [
+   "marketing",
+   120,
+   "rise",
+   0.4
+  ],
+  [
+   "marketing",
+   150,
+   "ping",
+   0.45
+  ],
+  [
+   "marketing",
+   185,
+   "ping",
+   0.45
+  ],
+  [
+   "marketing",
+   228,
+   "whoosh",
+   0.4
+  ],
+  [
+   "ai",
+   0,
+   "energy",
+   0.6
+  ],
+  [
+   "ai",
+   30,
+   "impact",
+   0.45
+  ],
+  [
+   "ai",
+   40,
+   "holo",
+   0.5
+  ],
+  [
+   "ai",
+   100,
+   "connect",
+   0.35
+  ],
+  [
+   "ai",
+   118,
+   "pulse",
+   0.35
+  ],
+  [
+   "ai",
+   136,
+   "connect",
+   0.35
+  ],
+  [
+   "ai",
+   154,
+   "pulse",
+   0.35
+  ],
+  [
+   "ai",
+   172,
+   "connect",
+   0.35
+  ],
+  [
+   "ai",
+   190,
+   "pulse",
+   0.35
+  ],
+  [
+   "ai",
+   208,
+   "connect",
+   0.35
+  ],
+  [
+   "ai",
+   226,
+   "pulse",
+   0.35
+  ],
+  [
+   "ai",
+   244,
+   "connect",
+   0.35
+  ],
+  [
+   "ai",
+   262,
+   "pulse",
+   0.35
+  ],
+  [
+   "ai",
+   280,
+   "connect",
+   0.35
+  ],
+  [
+   "ai",
+   300,
+   "data",
+   0.45
+  ],
+  [
+   "ai",
+   330,
+   "pulse",
+   0.4
+  ],
+  [
+   "ai",
+   360,
+   "pulse",
+   0.4
+  ],
+  [
+   "ai",
+   390,
+   "pulse",
+   0.4
+  ],
+  [
+   "ai",
+   420,
+   "whoosh-big",
+   0.45
+  ],
+  [
+   "systems",
+   10,
+   "swipe",
+   0.35
+  ],
+  [
+   "systems",
+   20,
+   "swipe",
+   0.35
+  ],
+  [
+   "systems",
+   30,
+   "swipe",
+   0.35
+  ],
+  [
+   "systems",
+   40,
+   "swipe",
+   0.35
+  ],
+  [
+   "systems",
+   50,
+   "swipe",
+   0.35
+  ],
+  [
+   "systems",
+   60,
+   "swipe",
+   0.35
+  ],
+  [
+   "systems",
+   70,
+   "swipe",
+   0.35
+  ],
+  [
+   "systems",
+   90,
+   "connect",
+   0.4
+  ],
+  [
+   "systems",
+   100,
+   "connect",
+   0.4
+  ],
+  [
+   "systems",
+   110,
+   "connect",
+   0.4
+  ],
+  [
+   "systems",
+   120,
+   "connect",
+   0.4
+  ],
+  [
+   "systems",
+   130,
+   "connect",
+   0.4
+  ],
+  [
+   "systems",
+   140,
+   "connect",
+   0.4
+  ],
+  [
+   "systems",
+   150,
+   "connect",
+   0.4
+  ],
+  [
+   "systems",
+   170,
+   "impact",
+   0.4
+  ],
+  [
+   "systems",
+   172,
+   "resonance",
+   0.3
+  ],
+  [
+   "systems",
+   228,
+   "whoosh",
+   0.4
+  ],
+  [
+   "global",
+   0,
+   "whoosh",
+   0.4
+  ],
+  [
+   "global",
+   6,
+   "data",
+   0.3
+  ],
+  [
+   "global",
+   40,
+   "sat",
+   0.35
+  ],
+  [
+   "global",
+   76,
+   "sat",
+   0.35
+  ],
+  [
+   "global",
+   112,
+   "sat",
+   0.35
+  ],
+  [
+   "global",
+   52,
+   "connect",
+   0.3
+  ],
+  [
+   "global",
+   64,
+   "connect",
+   0.3
+  ],
+  [
+   "global",
+   88,
+   "connect",
+   0.3
+  ],
+  [
+   "global",
+   100,
+   "connect",
+   0.3
+  ],
+  [
+   "global",
+   90,
+   "data",
+   0.3
+  ],
+  [
+   "global",
+   150,
+   "holo",
+   0.4
+  ],
+  [
+   "global",
+   228,
+   "whoosh",
+   0.4
+  ],
+  [
+   "showcase",
+   0,
+   "holo",
+   0.5
+  ],
+  [
+   "showcase",
+   20,
+   "energy",
+   0.45
+  ],
+  [
+   "showcase",
+   30,
+   "swipe",
+   0.3
+  ],
+  [
+   "showcase",
+   45,
+   "swipe",
+   0.3
+  ],
+  [
+   "showcase",
+   60,
+   "swipe",
+   0.3
+  ],
+  [
+   "showcase",
+   75,
+   "swipe",
+   0.3
+  ],
+  [
+   "showcase",
+   90,
+   "swipe",
+   0.3
+  ],
+  [
+   "showcase",
+   190,
+   "impact",
+   0.4
+  ],
+  [
+   "showcase",
+   228,
+   "whoosh-big",
+   0.4
+  ],
+  [
+   "legacy",
+   0,
+   "particles",
+   0.6
+  ],
+  [
+   "legacy",
+   40,
+   "metal",
+   0.6
+  ],
+  [
+   "legacy",
+   48,
+   "impact",
+   0.7
+  ],
+  [
+   "legacy",
+   52,
+   "holo",
+   0.4
+  ],
+  [
+   "legacy",
+   64,
+   "holo",
+   0.4
+  ],
+  [
+   "legacy",
+   176,
+   "click",
+   0.4
+  ],
+  [
+   "legacy",
+   196,
+   "resonance",
+   0.5
+  ]
+ ],
+ "vo": [
+  [
+   "vo01",
+   "arrival",
+   24,
+   "Technology. Innovation. Intelligent growth."
+  ],
+  [
+   "vo02",
+   "who",
+   30,
+   "Meet Sai zool Ameen."
+  ],
+  [
+   "vo03",
+   "who",
+   null,
+   "A digital systems strategist helping businesses grow through technology, automation, and intelligent digital systems."
+  ],
+  [
+   "vo04",
+   "ecosystem",
+   24,
+   "From strategy to execution, every solution is designed to create measurable growth and long term success."
+  ],
+  [
+   "vo05",
+   "web",
+   24,
+   "Creating modern, high performing websites designed for user experience, visibility, and business growth."
+  ],
+  [
+   "vo06",
+   "seo",
+   24,
+   "Using strategic S E O systems to improve visibility, drive organic traffic, and strengthen online presence."
+  ],
+  [
+   "vo07",
+   "marketing",
+   20,
+   "Combining creativity and data to generate leads, improve conversions, and scale marketing performance."
+  ],
+  [
+   "vo08",
+   "ai",
+   40,
+   "Specializing in A I automations and intelligent A I agents that reduce manual work, streamline operations, and help businesses scale efficiently."
+  ],
+  [
+   "vo09",
+   "systems",
+   20,
+   "Every system is designed to work together, creating a connected foundation for sustainable growth."
+  ],
+  [
+   "vo10",
+   "global",
+   20,
+   "Delivering digital solutions that support organizations, teams, and businesses across different industries and markets."
+  ],
+  [
+   "vo11",
+   "showcase",
+   20,
+   "Technology is most powerful when it works seamlessly behind the scenes."
+  ],
+  [
+   "vo12",
+   "showcase",
+   null,
+   "That philosophy drives every solution Sai zool creates."
+  ],
+  [
+   "vo13",
+   "legacy",
+   30,
+   "Sai zool Ameen."
+  ],
+  [
+   "vo14",
+   "legacy",
+   null,
+   "Building intelligent systems for modern business growth."
+  ]
+ ]
+}
