@@ -9,9 +9,14 @@
     "noEmit": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "types": [
+      "node"
+    ]
   },
   "include": [
-    "src"
+    "src",
+    "scripts/*.ts",
+    "test"
   ]
 }

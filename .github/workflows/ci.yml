@@ -17,3 +17,7 @@ jobs:
       - run: npm ci
       - name: Type check
         run: npm run lint
+      - name: Check timeline, voice-over and beat data
+        run: npm run check
+      - name: Unit tests
+        run: npm test
